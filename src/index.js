@@ -9,4 +9,12 @@ window.onload = function (evt) {
 
     const heading = document.querySelector('h1');
     heading.textContent = 'READY TO GO!'
+
+    // 2- copy
+    window.addEventListener('copy', () => {
+        navigator.clipboard.readText()
+            .then(text => {
+                heading.textContent += text;
+            });
+    });
 }
