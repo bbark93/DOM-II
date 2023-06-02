@@ -57,5 +57,11 @@ window.onload = function (evt) {
             }, 500);
         })
     }
-
+    // 9- mouseover
+    const paraTag = document.querySelectorAll('p');
+    for (let ps of paraTag) {
+        ps.addEventListener('mouseover', () => {
+            ps.style.color = 'yellow';
+        });
+    }
 }
