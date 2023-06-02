@@ -17,4 +17,14 @@ window.onload = function (evt) {
                 heading.textContent += text;
             });
     });
+
+    // 3- click
+    document.addEventListener('click', evt => {
+        evt.target.classList.toggle('mirror');
+    });
+
+    // 4- dbclick
+    document.body.addEventListener('dblclick', evt => {
+        evt.target.innerHTML = '';
+    });
 }

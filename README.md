@@ -35,9 +35,10 @@ Do not **move or rename any files** in this project. The website's source files 
   * [ ] `resize`
   * [ ] `scroll`
   * [ ] `select`
-  * [ ] `dblclick`
+  * [x] `dblclick`
   * [ ] `drag / drop`
   * [x] `copy`
+  * [x] `click`
 
 Note: Drag and drop is a bit more advanced than the others. It's not actually a single type of event but several types that need to work together.
 
