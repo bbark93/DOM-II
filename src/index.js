@@ -34,4 +34,10 @@ window.onload = function (evt) {
             document.body.innerHTML = '<h1>YOU RAN ORDER 66</h1>';
         }
     });
+
+    // 6- mousemove
+    document.body.addEventListener('mousemove',evt => {
+        const { clientX, clientY} = evt;
+        console.log(`mouse is at ${clientX} and ${clientY}`);
+    });
 }
