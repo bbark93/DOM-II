@@ -37,7 +37,25 @@ window.onload = function (evt) {
 
     // 6- mousemove
     document.body.addEventListener('mousemove',evt => {
-        const { clientX, clientY} = evt;
-        console.log(`mouse is at ${clientX} and ${clientY}`);
+        const { clientX, clientY} = evt;//clientX > 330 && clientX < 545)
+        if (clientY > 150 && clientY < 270)  {
+            heading.textContent = 'Fun Bus';
+        }
+        // console.log(`mouse is at ${clientX} and ${clientY}`);
     });
+
+    // 7- mouseenter
+    // 8- mouseleave
+    const destinations = document.querySelectorAll('.destination');
+    for (let destination of destinations) {
+        destination.addEventListener('mouseenter', () =>{
+            destination.style.fontWeight = 'bold';
+        });
+        destination.addEventListener('mouseleave', () => {
+            setTimeout(() => {
+                destination.style.fontWeight = 'initial';
+            }, 500);
+        })
+    }
+
 }
